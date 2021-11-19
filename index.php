@@ -81,7 +81,7 @@ echo "<br>";
 $Info = new info3('Diana',18,'female','O',79,'3 foot','80/110');
 $Info -> GeneralInfo();
 echo "<br>";
-echo "<br>";    
+echo "<br>";
 $Info = new info4('kei',18,'female','A',43,'6,1 foot','80/111');
 $Info -> GeneralInfo();
 
