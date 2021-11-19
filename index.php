@@ -8,102 +8,50 @@
 </head>
 <body>
 <?php
+Interface  Patient {
+	public function GeneralInfo();
 
-interface Patient{
-      public function assignPatient($name,$age,$gender);
-      public function getPatientsInfo();
-      public  function deletePatient($id);
-      
+}
+
+class generalinfo {
+	public $name;
+	public $age;
+	public $gender;
+	public function __construct($name,$age,$gender,$bloodtype,$weight,$height,$bloodpressure) {
+		$this -> name = $name;
+		$this -> age = $age;
+	    $this -> gender = $gender;
+	     $this -> bloodtype = $bloodtype;
+	     $this -> weight = $weight;
+	     $this -> height = $height;
+	      $this -> bloodpressure = $bloodpressure;
+	}
 }
 
 
-class patients_data implements Patient {
-    public $name;
-  public function assignPatient($name,$age,$gender){
-    $ages =(string)$age;
-    $genders=$gender;
-    if($genders=="male"){
-        $all=$name." ".$ages." ".$gender;
-    $name = strtolower($all);
-    $name = preg_split('/\.|\!/', $name);              
-    foreach ($name as &$sentence) {
-    $sentence = ucwords(trim($sentence));
-    }
-    $name = implode('. ', $name);
-      $this->name = $name;
-    }else if($genders=="female"){
-        $all=$name." ".$ages." ".$gender;
-    $name = strtolower($all);
-    $name = preg_split('/\.|\!/', $name);              
-    foreach ($name as &$sentence) {
-    $sentence = ucwords(trim($sentence));
-    }
-    $name = implode('. ', $name);
-      $this->name = $name;
-    }else{
-        echo "Plss check your input in gender\n";
-    }
- }
-public function storeInTextFile() {
-$data =$this->name;
-$output = "";
-   $arr = explode("\n", $data);
-   foreach ($arr as $word){
-     $output .= '"'.trim($word)."\"\n";
-   }
-$fp = fopen('data.txt', 'a');
-fwrite($fp, $output);
-fclose($fp);
+
+class info extends generalinfo  implements Patient {
+	function GeneralInfo() {
+		echo 'My name is '. $this -> name .' '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
+	   
+	
+	}
 }
-
-
-public function getPatientsInfo(){
-
-        echo $this->GeneralInfo();
-
-    }
-public  function deletePatient($id){
-     
-}
-
-
-public function admin(){
-$myFile = "data.txt";
-$lines = file($myFile);
-$array_count_values = array_count_values($lines);
-if(is_array($array_count_values) && count($array_count_values)>0){
-   foreach ($array_count_values as $key => $value){
-   }
-      if($value>1){
-         echo "Plss check your input the name is already in use!";
-         file_put_contents("data.txt", "");
-      }else{
-         print_r($lines);
-      }
-   
-}
-}
-}
-
-$p1 = new patients_data();
-$p1->assignPatient("Patrick star",18,"male");
-$p1->deletePatient(2);
-$p1->storeInTextFile();
-
-$p2 = new patients_data();
-$p2->assignPatient("SpongeBob Squarepants",17,"male");
-$p2->storeInTextFile();
-
-$p3 = new patients_data();
-$p3->assignPatient("Eugene Krab",28,"male");
-$p3->storeInTextFile();
+$Info = new info('Hyvor',12,'male','A',59,'6 foot','80/120');
+$Info -> GeneralInfo();
+$Info = new info('Ezekiel',13,'male','B',49,'5 foot','80/110');
+$Info -> GeneralInfo();
+$Info = new info('Tyron',18,'male','B+',69,'4 foot','80/110');
+$Info -> GeneralInfo();
+$Info = new info('Diana',18,'female','O',79,'3 foot','80/110');
+$Info -> GeneralInfo();
+$Info = new info('kei',18,'female','A',43,'6,1 foot','80/111');
+$Info -> GeneralInfo();
 
 
 
-$ADMIN = new patients_data();
-$ADMIN->admin();
 
 
-?>
+
 </body>
 </html>
