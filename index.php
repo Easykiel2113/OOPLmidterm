@@ -39,7 +39,7 @@ class generalinfo {
 
 class info extends generalinfo  implements Patient {
 	function GeneralInfo() {
-		echo 'Name:'. $this -> name .' '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
+		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
 	  
 	
 	}
