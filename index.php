@@ -93,7 +93,7 @@ $Info -> GeneralInfo();
 echo "<br>";
 echo "<br>";
 echo "Status: Done"."<br>";
-$Info = new info3('Diana',18,'female','Balanga City, Bataan');
+$Info = new info3('Diana rose',18,'female','Balanga City, Bataan');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
 echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
