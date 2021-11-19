@@ -51,7 +51,7 @@ class info1 extends generalinfo  implements Patient {
 	
 	}
 }
-class info2 extends generalinfo  implements Patient {
+class info2 extends generalinfo   implements Patient {
 	function GeneralInfo() {
 		echo 'My name is '. $this -> name .' '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
 	  
