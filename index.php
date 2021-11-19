@@ -72,9 +72,10 @@ class info4 extends generalinfo  implements Patient {
 	
 	}
 }
-
+echo "Status: Done"."<br>";
 $Info = new info('Hyvor',12,'male','A',59,'6 foot','80/120');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
+echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
 echo "<br>";
@@ -83,7 +84,7 @@ echo "Date of consultation:" . date("m/d/y") . "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
 echo "<br>";
-$Info = new info2('Tyron',18,'male','B+',69,'4 foot','80/110');
+$Info = new info2('Tyron  ',18,'male','B+',69,'4 foot','80/110');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
