@@ -37,35 +37,35 @@ class generalinfo {
 
 class info extends generalinfo  implements Patient {
 	function GeneralInfo() {
-		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender.' '. $this -> address ;
+		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender.' '. 'Address: '. $this -> address ;
 	  
 	
 	}
 }
 class info1 extends generalinfo  implements Patient {
 	function GeneralInfo() {
-		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '.$this -> address;
+		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '.'Address: '.$this -> address;
 	  
 	
 	}
 }
 class info2 extends generalinfo  implements Patient {
 	function GeneralInfo() {
-		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '. $this -> address;
+		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '.' Address: '. $this -> address;
 	  
 	
 	}
 }
 class info3 extends generalinfo  implements Patient {
 	function GeneralInfo() {
-		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '. $this -> address;
+		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '.'Address: '. $this -> address;
 	  
 	
 	}
 }
 class info4 extends generalinfo  implements Patient {
 	function GeneralInfo() {
-		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '. $this -> address;
+		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '.'Address: '. $this -> address;
 	  
 	
 	}
