@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <style>
-        body {background-color: rgba(255, 255, 128, .5);
+        body {background: #2368CF;
+background: -webkit-linear-gradient(to right, #2368CF 0%, #470826 100%);
+background: -moz-linear-gradient(to right, #2368CF 0%, #470826 100%);
+background: linear-gradient(to right, #2368CF 0%, #470826 100%);
         }
     </style>
     <meta charset="UTF-8">
