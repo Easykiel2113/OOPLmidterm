@@ -33,19 +33,56 @@ class generalinfo {
 class info extends generalinfo  implements Patient {
 	function GeneralInfo() {
 		echo 'My name is '. $this -> name .' '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
-	   
+	  
 	
 	}
 }
+class info1 extends generalinfo  implements Patient {
+	function GeneralInfo() {
+		echo 'My name is '. $this -> name .' '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
+	  
+	
+	}
+}
+class info2 extends generalinfo  implements Patient {
+	function GeneralInfo() {
+		echo 'My name is '. $this -> name .' '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
+	  
+	
+	}
+}
+class info3 extends generalinfo  implements Patient {
+	function GeneralInfo() {
+		echo 'My name is '. $this -> name .' '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
+	  
+	
+	}
+}
+class info4 extends generalinfo  implements Patient {
+	function GeneralInfo() {
+		echo 'My name is '. $this -> name .' '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
+	  
+	
+	}
+}
+
 $Info = new info('Hyvor',12,'male','A',59,'6 foot','80/120');
 $Info -> GeneralInfo();
-$Info = new info('Ezekiel',13,'male','B',49,'5 foot','80/110');
+echo "<br>";
+echo "<br>";
+$Info = new info1('Ezekiel',13,'male','B',49,'5 foot','80/110');
 $Info -> GeneralInfo();
-$Info = new info('Tyron',18,'male','B+',69,'4 foot','80/110');
+echo "<br>";
+echo "<br>";
+$Info = new info2('Tyron',18,'male','B+',69,'4 foot','80/110');
 $Info -> GeneralInfo();
-$Info = new info('Diana',18,'female','O',79,'3 foot','80/110');
+echo "<br>";
+echo "<br>";
+$Info = new info3('Diana',18,'female','O',79,'3 foot','80/110');
 $Info -> GeneralInfo();
-$Info = new info('kei',18,'female','A',43,'6,1 foot','80/111');
+echo "<br>";
+echo "<br>";    
+$Info = new info4('kei',18,'female','A',43,'6,1 foot','80/111');
 $Info -> GeneralInfo();
 
 
