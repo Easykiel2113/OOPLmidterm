@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body {background-color: rgba(255, 255, 128, .5);
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OOPL</title>
 </head>
 <body>
 <?php
@@ -67,22 +71,27 @@ class info4 extends generalinfo  implements Patient {
 }
 
 $Info = new info('Hyvor',12,'male','A',59,'6 foot','80/120');
+echo "Date of consultation:" . date("m/d/y") . "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
 echo "<br>";
 $Info = new info1('Ezekiel',13,'male','B',49,'5 foot','80/110');
+echo "Date of consultation:" . date("m/d/y") . "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
 echo "<br>";
 $Info = new info2('Tyron',18,'male','B+',69,'4 foot','80/110');
+echo "Date of consultation:" . date("m/d/y") . "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
 echo "<br>";
 $Info = new info3('Diana',18,'female','O',79,'3 foot','80/110');
+echo "Date of consultation:" . date("m/d/y") . "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
 echo "<br>";
 $Info = new info4('kei',18,'female','A',43,'6,1 foot','80/111');
+echo "Date of consultation:" . date("m/d/y") . "<br>";
 $Info -> GeneralInfo();
 
 
