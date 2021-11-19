@@ -24,14 +24,12 @@ class generalinfo {
 	public $name;
 	public $age;
 	public $gender;
-	public function __construct($name,$age,$gender,$bloodtype,$weight,$height,$bloodpressure) {
+	public function __construct($name,$age,$gender,$address) {
 		$this -> name = $name;
 		$this -> age = $age;
 	    $this -> gender = $gender;
-	     $this -> bloodtype = $bloodtype;
-	     $this -> weight = $weight;
-	     $this -> height = $height;
-	      $this -> bloodpressure = $bloodpressure;
+		$this -> address = $address;
+	   
 	}
 }
 
@@ -39,69 +37,70 @@ class generalinfo {
 
 class info extends generalinfo  implements Patient {
 	function GeneralInfo() {
-		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
+		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender.' '. $this -> address ;
 	  
 	
 	}
 }
 class info1 extends generalinfo  implements Patient {
 	function GeneralInfo() {
-		echo 'Name:'. $this -> name .' '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
+		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '.$this -> address;
 	  
 	
 	}
 }
-class info2 extends generalinfo   implements Patient {
+class info2 extends generalinfo  implements Patient {
 	function GeneralInfo() {
-		echo 'Name:'. $this -> name .' '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
+		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '. $this -> address;
 	  
 	
 	}
 }
 class info3 extends generalinfo  implements Patient {
 	function GeneralInfo() {
-		echo 'Name:'. $this -> name .' '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
+		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '. $this -> address;
 	  
 	
 	}
 }
 class info4 extends generalinfo  implements Patient {
 	function GeneralInfo() {
-		echo 'Name:'. $this -> name .' '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender . ' '.'bloodtype:' .  $this -> bloodtype . ' ' . 'Weight:'. $this -> weight . ' ' .'height:'. $this -> height . ' ' .'Bloodpressure:'. $this -> bloodpressure .' ';
+		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '. $this -> address;
 	  
 	
 	}
 }
+
 echo "Status: Done"."<br>";
-$Info = new info('Hyvor',12,'male','A',59,'6 foot','80/120');
+$Info = new info('Hyvor',12,'male','SDASADAS');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
 echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
 echo "<br>";
 echo "Status: Done"."<br>";
-$Info = new info1('Ezekiel',13,'male','B',49,'5 foot','80/110');
+$Info = new info1('Ezekiel',13,'male','ASDASDAS');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
 echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
 echo "<br>";
 echo "Status: Done"."<br>";
-$Info = new info2('Tyron  ',18,'male','B+',69,'4 foot','80/110');
+$Info = new info2('Tyron  ',18,'male','ASDASDSA');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
 echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
 echo "<br>";
 echo "Status: Done"."<br>";
-$Info = new info3('Diana',18,'female','O',79,'3 foot','80/110');
+$Info = new info3('Diana',18,'female','ASDASDSA');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
 echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
 echo "<br>";
 echo "Status: Done"."<br>";
-$Info = new info4('kei',18,'female','A',43,'6,1 foot','80/111');
+$Info = new info4('kei',18,'female','ASDASD');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
 echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
