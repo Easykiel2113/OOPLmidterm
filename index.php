@@ -32,8 +32,18 @@ class generalinfo {
 	   
 	}
 }
+class Status {
+    public $status;
+    public function __construct($status){
+        $this -> status = $status;
+    }
+}
 
-
+class sta extends Status implements Patient{
+    function GeneralInfo(){
+        echo 'Status:'. $this -> status;
+    }
+}
 
 class info extends generalinfo  implements Patient {
 	function GeneralInfo() {
@@ -71,44 +81,66 @@ class info4 extends generalinfo  implements Patient {
 	}
 }
 
-echo "Status: Done"."<br>";
+
+
 $Info = new info('Hyvor',12,'male','Abucay, Bataan');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
 echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
+$sta = new sta('Done');
+$sta ->GeneralInfo();
 echo "<br>";
-echo "Status: Done"."<br>";
+echo "<br>";
+
 $Info = new info1('Ezekiel',13,'male','Samal, Bataan');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
 echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
+$sta = new sta('Done');
+$sta ->GeneralInfo();
+
+
 echo "<br>";
-echo "Status: Done"."<br>";
+echo "<br>";
 $Info = new info2('Tyron  ',18,'male','Orani, Bataan');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
 echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
+$sta = new sta('Done');
+$sta ->GeneralInfo();
 echo "<br>";
-echo "Status: Done"."<br>";
+echo "<br>";
+
+
 $Info = new info3('Diana rose',18,'female','Balanga City, Bataan');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
 echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
 echo "<br>";
+$sta = new sta('Done');
+$sta ->GeneralInfo();
 echo "<br>";
-echo "Status: Done"."<br>";
+echo "<br>";
+
 $Info = new info4('kei',18,'female','Limay, Bataan');
 echo "Date of consultation:" . date("m/d/y") . "<br>";
 echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
-
+echo "<br>";
+$sta = new sta('Done');
+$sta ->GeneralInfo();
 
 
 
 
 ?>
+
+
+
+
+
 </body>
 </html>
