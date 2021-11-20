@@ -15,7 +15,7 @@ background: linear-gradient(to right, #2368CF 0%, #470826 100%);
 </head>
 <body>
     <div>
-    <?php include 'ui.php';?>
+    <?php include 'system.php';?>
     </div>
 </body>
 </html>
